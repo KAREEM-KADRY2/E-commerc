@@ -1,0 +1,1797 @@
+﻿{
+  "categories": [
+    {
+      "id": "mens",
+      "name": "Men's Clothing",
+      "icon": "shirt",
+      "count": 6,
+      "image": "/assets/categories/mens.png"
+    },
+    {
+      "id": "womens",
+      "name": "Women's Clothing",
+      "icon": "shopping-bag",
+      "count": 6,
+      "image": "/assets/categories/womens.png"
+    },
+    {
+      "id": "shoes",
+      "name": "Shoes",
+      "icon": "footprints",
+      "count": 6,
+      "image": "/assets/categories/shoes.png"
+    },
+    {
+      "id": "watches",
+      "name": "Watches",
+      "icon": "watch",
+      "count": 6,
+      "image": "/assets/categories/watches.png"
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics",
+      "icon": "smartphone",
+      "count": 6,
+      "image": "/assets/categories/electronics.png"
+    },
+    {
+      "id": "audio",
+      "name": "Audio",
+      "icon": "headphones",
+      "count": 6,
+      "image": "/assets/products/audio-1.jpg"
+    },
+    {
+      "id": "laptops",
+      "name": "Laptops",
+      "icon": "laptop",
+      "count": 6,
+      "image": "/assets/products/laptops-1.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro Max",
+      "category": "electronics",
+      "price": 2491,
+      "oldPrice": 2939,
+      "groupPrice": 2241,
+      "cashback": 249,
+      "discount": "-15%",
+      "rating": "5.0",
+      "reviewsCount": 304,
+      "weeklySales": 42,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/1.png",
+      "images": [
+        "/assets/trending/1.png",
+        "/assets/trending/1.png",
+        "/assets/trending/1.png",
+        "/assets/trending/1.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Red Running Sneakers",
+      "category": "shoes",
+      "price": 3077,
+      "oldPrice": 4345,
+      "groupPrice": 2769,
+      "cashback": 307,
+      "discount": "-29%",
+      "rating": "3.6",
+      "reviewsCount": 120,
+      "weeklySales": 12,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/2.jpg",
+      "images": [
+        "/assets/trending/2.jpg",
+        "/assets/trending/2.jpg",
+        "/assets/trending/2.jpg",
+        "/assets/trending/2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Beige Leather Backpack",
+      "category": "womens",
+      "price": 3014,
+      "oldPrice": 3868,
+      "groupPrice": 2712,
+      "cashback": 301,
+      "discount": "-22%",
+      "rating": "4.1",
+      "reviewsCount": 71,
+      "weeklySales": 11,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/3.png",
+      "images": [
+        "/assets/trending/3.png",
+        "/assets/trending/3.png",
+        "/assets/trending/3.png",
+        "/assets/trending/3.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "White Casual Sneakers",
+      "category": "shoes",
+      "price": 3195,
+      "oldPrice": 4345,
+      "groupPrice": 2875,
+      "cashback": 319,
+      "discount": "-26%",
+      "rating": "3.7",
+      "reviewsCount": 81,
+      "weeklySales": 59,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/4.png",
+      "images": [
+        "/assets/trending/4.png",
+        "/assets/trending/4.png",
+        "/assets/trending/4.png",
+        "/assets/trending/4.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Gaming Setup Bundle",
+      "category": "electronics",
+      "price": 940,
+      "oldPrice": 1272,
+      "groupPrice": 846,
+      "cashback": 94,
+      "discount": "-26%",
+      "rating": "4.6",
+      "reviewsCount": 395,
+      "weeklySales": 48,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/5.png",
+      "images": [
+        "/assets/trending/5.png",
+        "/assets/trending/5.png",
+        "/assets/trending/5.png",
+        "/assets/trending/5.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Canon EOS R7 Camera",
+      "category": "electronics",
+      "price": 3957,
+      "oldPrice": 5951,
+      "groupPrice": 3561,
+      "cashback": 395,
+      "discount": "-34%",
+      "rating": "4.8",
+      "reviewsCount": 493,
+      "weeklySales": 49,
+      "shortDescription": "A high-quality item from our Men's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/6.png",
+      "images": [
+        "/assets/trending/6.png",
+        "/assets/trending/6.png",
+        "/assets/trending/6.png",
+        "/assets/trending/6.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "DJI Mini 3 Pro Drone",
+      "category": "electronics",
+      "price": 5391,
+      "oldPrice": 8085,
+      "groupPrice": 4851,
+      "cashback": 539,
+      "discount": "-33%",
+      "rating": "3.6",
+      "reviewsCount": 274,
+      "weeklySales": 6,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/7.jpg",
+      "images": [
+        "/assets/trending/7.jpg",
+        "/assets/trending/7.jpg",
+        "/assets/trending/7.jpg",
+        "/assets/trending/7.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "PlayStation 5 Console",
+      "category": "electronics",
+      "price": 2195,
+      "oldPrice": 2618,
+      "groupPrice": 1975,
+      "cashback": 219,
+      "discount": "-16%",
+      "rating": "4.4",
+      "reviewsCount": 483,
+      "weeklySales": 88,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/trending/8.png",
+      "images": [
+        "/assets/trending/8.png",
+        "/assets/trending/8.png",
+        "/assets/trending/8.png",
+        "/assets/trending/8.png"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Premium Women's Clothing Item 3",
+      "category": "womens",
+      "price": 538,
+      "oldPrice": 637,
+      "groupPrice": 484,
+      "cashback": 53,
+      "discount": "-16%",
+      "rating": "4.9",
+      "reviewsCount": 441,
+      "weeklySales": 32,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/products/womens-3.jpg",
+      "images": [
+        "/assets/products/womens-3.jpg",
+        "/assets/products/womens-3.jpg",
+        "/assets/products/womens-3.jpg",
+        "/assets/products/womens-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Premium Women's Clothing Item 4",
+      "category": "womens",
+      "price": 2557,
+      "oldPrice": 3527,
+      "groupPrice": 2301,
+      "cashback": 255,
+      "discount": "-28%",
+      "rating": "4.0",
+      "reviewsCount": 318,
+      "weeklySales": 44,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/products/womens-4.jpg",
+      "images": [
+        "/assets/products/womens-4.jpg",
+        "/assets/products/womens-4.jpg",
+        "/assets/products/womens-4.jpg",
+        "/assets/products/womens-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Premium Women's Clothing Item 5",
+      "category": "womens",
+      "price": 3164,
+      "oldPrice": 4624,
+      "groupPrice": 2847,
+      "cashback": 316,
+      "discount": "-32%",
+      "rating": "4.2",
+      "reviewsCount": 328,
+      "weeklySales": 34,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/products/womens-5.jpg",
+      "images": [
+        "/assets/products/womens-5.jpg",
+        "/assets/products/womens-5.jpg",
+        "/assets/products/womens-5.jpg",
+        "/assets/products/womens-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Premium Women's Clothing Item 6",
+      "category": "womens",
+      "price": 1139,
+      "oldPrice": 1635,
+      "groupPrice": 1025,
+      "cashback": 113,
+      "discount": "-30%",
+      "rating": "4.6",
+      "reviewsCount": 401,
+      "weeklySales": 46,
+      "shortDescription": "A high-quality item from our Women's Clothing collection. Designed for excellence and comfort.",
+      "image": "/assets/products/womens-6.jpg",
+      "images": [
+        "/assets/products/womens-6.jpg",
+        "/assets/products/womens-6.jpg",
+        "/assets/products/womens-6.jpg",
+        "/assets/products/womens-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Premium Shoes Item 1",
+      "category": "shoes",
+      "price": 3208,
+      "oldPrice": 3737,
+      "groupPrice": 2887,
+      "cashback": 320,
+      "discount": "-14%",
+      "rating": "4.4",
+      "reviewsCount": 274,
+      "weeklySales": 28,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-1.jpg",
+      "images": [
+        "/assets/products/shoes-1.jpg",
+        "/assets/products/shoes-1.jpg",
+        "/assets/products/shoes-1.jpg",
+        "/assets/products/shoes-1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Premium Shoes Item 2",
+      "category": "shoes",
+      "price": 4059,
+      "oldPrice": 5504,
+      "groupPrice": 3653,
+      "cashback": 405,
+      "discount": "-26%",
+      "rating": "4.8",
+      "reviewsCount": 509,
+      "weeklySales": 25,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-2.jpg",
+      "images": [
+        "/assets/products/shoes-2.jpg",
+        "/assets/products/shoes-2.jpg",
+        "/assets/products/shoes-2.jpg",
+        "/assets/products/shoes-2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Premium Shoes Item 3",
+      "category": "shoes",
+      "price": 4681,
+      "oldPrice": 6528,
+      "groupPrice": 4212,
+      "cashback": 468,
+      "discount": "-28%",
+      "rating": "4.1",
+      "reviewsCount": 156,
+      "weeklySales": 56,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-3.jpg",
+      "images": [
+        "/assets/products/shoes-3.jpg",
+        "/assets/products/shoes-3.jpg",
+        "/assets/products/shoes-3.jpg",
+        "/assets/products/shoes-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Premium Shoes Item 4",
+      "category": "shoes",
+      "price": 1529,
+      "oldPrice": 1909,
+      "groupPrice": 1376,
+      "cashback": 152,
+      "discount": "-20%",
+      "rating": "4.4",
+      "reviewsCount": 53,
+      "weeklySales": 100,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-4.jpg",
+      "images": [
+        "/assets/products/shoes-4.jpg",
+        "/assets/products/shoes-4.jpg",
+        "/assets/products/shoes-4.jpg",
+        "/assets/products/shoes-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Premium Shoes Item 5",
+      "category": "shoes",
+      "price": 4392,
+      "oldPrice": 7003,
+      "groupPrice": 3952,
+      "cashback": 439,
+      "discount": "-37%",
+      "rating": "4.8",
+      "reviewsCount": 262,
+      "weeklySales": 85,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-5.jpg",
+      "images": [
+        "/assets/products/shoes-5.jpg",
+        "/assets/products/shoes-5.jpg",
+        "/assets/products/shoes-5.jpg",
+        "/assets/products/shoes-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Premium Shoes Item 6",
+      "category": "shoes",
+      "price": 4678,
+      "oldPrice": 6178,
+      "groupPrice": 4210,
+      "cashback": 467,
+      "discount": "-24%",
+      "rating": "4.8",
+      "reviewsCount": 300,
+      "weeklySales": 65,
+      "shortDescription": "A high-quality item from our Shoes collection. Designed for excellence and comfort.",
+      "image": "/assets/products/shoes-6.jpg",
+      "images": [
+        "/assets/products/shoes-6.jpg",
+        "/assets/products/shoes-6.jpg",
+        "/assets/products/shoes-6.jpg",
+        "/assets/products/shoes-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Premium Watches Item 1",
+      "category": "watches",
+      "price": 2590,
+      "oldPrice": 3083,
+      "groupPrice": 2331,
+      "cashback": 259,
+      "discount": "-16%",
+      "rating": "4.0",
+      "reviewsCount": 242,
+      "weeklySales": 36,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-1.jpg",
+      "images": [
+        "/assets/products/watches-1.jpg",
+        "/assets/products/watches-1.jpg",
+        "/assets/products/watches-1.jpg",
+        "/assets/products/watches-1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Premium Watches Item 2",
+      "category": "watches",
+      "price": 3400,
+      "oldPrice": 5382,
+      "groupPrice": 3060,
+      "cashback": 340,
+      "discount": "-37%",
+      "rating": "3.7",
+      "reviewsCount": 189,
+      "weeklySales": 86,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-2.jpg",
+      "images": [
+        "/assets/products/watches-2.jpg",
+        "/assets/products/watches-2.jpg",
+        "/assets/products/watches-2.jpg",
+        "/assets/products/watches-2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Premium Watches Item 3",
+      "category": "watches",
+      "price": 1951,
+      "oldPrice": 2769,
+      "groupPrice": 1755,
+      "cashback": 195,
+      "discount": "-30%",
+      "rating": "3.7",
+      "reviewsCount": 15,
+      "weeklySales": 42,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-3.jpg",
+      "images": [
+        "/assets/products/watches-3.jpg",
+        "/assets/products/watches-3.jpg",
+        "/assets/products/watches-3.jpg",
+        "/assets/products/watches-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Premium Watches Item 4",
+      "category": "watches",
+      "price": 966,
+      "oldPrice": 1088,
+      "groupPrice": 869,
+      "cashback": 96,
+      "discount": "-11%",
+      "rating": "4.2",
+      "reviewsCount": 348,
+      "weeklySales": 32,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-4.jpg",
+      "images": [
+        "/assets/products/watches-4.jpg",
+        "/assets/products/watches-4.jpg",
+        "/assets/products/watches-4.jpg",
+        "/assets/products/watches-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Premium Watches Item 5",
+      "category": "watches",
+      "price": 2409,
+      "oldPrice": 2822,
+      "groupPrice": 2168,
+      "cashback": 240,
+      "discount": "-15%",
+      "rating": "3.6",
+      "reviewsCount": 148,
+      "weeklySales": 19,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-5.jpg",
+      "images": [
+        "/assets/products/watches-5.jpg",
+        "/assets/products/watches-5.jpg",
+        "/assets/products/watches-5.jpg",
+        "/assets/products/watches-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Premium Watches Item 6",
+      "category": "watches",
+      "price": 2869,
+      "oldPrice": 3958,
+      "groupPrice": 2582,
+      "cashback": 286,
+      "discount": "-28%",
+      "rating": "4.5",
+      "reviewsCount": 179,
+      "weeklySales": 18,
+      "shortDescription": "A high-quality item from our Watches collection. Designed for excellence and comfort.",
+      "image": "/assets/products/watches-6.jpg",
+      "images": [
+        "/assets/products/watches-6.jpg",
+        "/assets/products/watches-6.jpg",
+        "/assets/products/watches-6.jpg",
+        "/assets/products/watches-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Premium Electronics Item 1",
+      "category": "electronics",
+      "price": 5056,
+      "oldPrice": 7725,
+      "groupPrice": 4550,
+      "cashback": 505,
+      "discount": "-35%",
+      "rating": "3.8",
+      "reviewsCount": 362,
+      "weeklySales": 40,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-1.jpg",
+      "images": [
+        "/assets/products/electronics-1.jpg",
+        "/assets/products/electronics-1.jpg",
+        "/assets/products/electronics-1.jpg",
+        "/assets/products/electronics-1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Premium Electronics Item 2",
+      "category": "electronics",
+      "price": 568,
+      "oldPrice": 632,
+      "groupPrice": 511,
+      "cashback": 56,
+      "discount": "-10%",
+      "rating": "4.5",
+      "reviewsCount": 130,
+      "weeklySales": 32,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-2.jpg",
+      "images": [
+        "/assets/products/electronics-2.jpg",
+        "/assets/products/electronics-2.jpg",
+        "/assets/products/electronics-2.jpg",
+        "/assets/products/electronics-2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Premium Electronics Item 3",
+      "category": "electronics",
+      "price": 825,
+      "oldPrice": 1126,
+      "groupPrice": 742,
+      "cashback": 82,
+      "discount": "-27%",
+      "rating": "3.8",
+      "reviewsCount": 147,
+      "weeklySales": 32,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-3.jpg",
+      "images": [
+        "/assets/products/electronics-3.jpg",
+        "/assets/products/electronics-3.jpg",
+        "/assets/products/electronics-3.jpg",
+        "/assets/products/electronics-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Premium Electronics Item 4",
+      "category": "electronics",
+      "price": 2009,
+      "oldPrice": 3051,
+      "groupPrice": 1808,
+      "cashback": 200,
+      "discount": "-34%",
+      "rating": "4.0",
+      "reviewsCount": 28,
+      "weeklySales": 88,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-4.jpg",
+      "images": [
+        "/assets/products/electronics-4.jpg",
+        "/assets/products/electronics-4.jpg",
+        "/assets/products/electronics-4.jpg",
+        "/assets/products/electronics-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Premium Electronics Item 5",
+      "category": "electronics",
+      "price": 1394,
+      "oldPrice": 2210,
+      "groupPrice": 1254,
+      "cashback": 139,
+      "discount": "-37%",
+      "rating": "4.6",
+      "reviewsCount": 318,
+      "weeklySales": 22,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-5.jpg",
+      "images": [
+        "/assets/products/electronics-5.jpg",
+        "/assets/products/electronics-5.jpg",
+        "/assets/products/electronics-5.jpg",
+        "/assets/products/electronics-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Premium Electronics Item 6",
+      "category": "electronics",
+      "price": 1799,
+      "oldPrice": 2696,
+      "groupPrice": 1619,
+      "cashback": 179,
+      "discount": "-33%",
+      "rating": "4.3",
+      "reviewsCount": 373,
+      "weeklySales": 77,
+      "shortDescription": "A high-quality item from our Electronics collection. Designed for excellence and comfort.",
+      "image": "/assets/products/electronics-6.jpg",
+      "images": [
+        "/assets/products/electronics-6.jpg",
+        "/assets/products/electronics-6.jpg",
+        "/assets/products/electronics-6.jpg",
+        "/assets/products/electronics-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Premium Audio Item 1",
+      "category": "audio",
+      "price": 865,
+      "oldPrice": 1342,
+      "groupPrice": 778,
+      "cashback": 86,
+      "discount": "-36%",
+      "rating": "4.1",
+      "reviewsCount": 413,
+      "weeklySales": 98,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-1.jpg",
+      "images": [
+        "/assets/products/audio-1.jpg",
+        "/assets/products/audio-1.jpg",
+        "/assets/products/audio-1.jpg",
+        "/assets/products/audio-1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Premium Audio Item 2",
+      "category": "audio",
+      "price": 1993,
+      "oldPrice": 2254,
+      "groupPrice": 1793,
+      "cashback": 199,
+      "discount": "-12%",
+      "rating": "4.7",
+      "reviewsCount": 309,
+      "weeklySales": 104,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-2.jpg",
+      "images": [
+        "/assets/products/audio-2.jpg",
+        "/assets/products/audio-2.jpg",
+        "/assets/products/audio-2.jpg",
+        "/assets/products/audio-2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Premium Audio Item 3",
+      "category": "audio",
+      "price": 534,
+      "oldPrice": 713,
+      "groupPrice": 480,
+      "cashback": 53,
+      "discount": "-25%",
+      "rating": "4.9",
+      "reviewsCount": 468,
+      "weeklySales": 64,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-3.jpg",
+      "images": [
+        "/assets/products/audio-3.jpg",
+        "/assets/products/audio-3.jpg",
+        "/assets/products/audio-3.jpg",
+        "/assets/products/audio-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Premium Audio Item 4",
+      "category": "audio",
+      "price": 2226,
+      "oldPrice": 2629,
+      "groupPrice": 2003,
+      "cashback": 222,
+      "discount": "-15%",
+      "rating": "4.7",
+      "reviewsCount": 465,
+      "weeklySales": 5,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-4.jpg",
+      "images": [
+        "/assets/products/audio-4.jpg",
+        "/assets/products/audio-4.jpg",
+        "/assets/products/audio-4.jpg",
+        "/assets/products/audio-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Premium Audio Item 5",
+      "category": "audio",
+      "price": 1606,
+      "oldPrice": 2045,
+      "groupPrice": 1445,
+      "cashback": 160,
+      "discount": "-21%",
+      "rating": "4.6",
+      "reviewsCount": 228,
+      "weeklySales": 44,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-5.jpg",
+      "images": [
+        "/assets/products/audio-5.jpg",
+        "/assets/products/audio-5.jpg",
+        "/assets/products/audio-5.jpg",
+        "/assets/products/audio-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Premium Audio Item 6",
+      "category": "audio",
+      "price": 3157,
+      "oldPrice": 3999,
+      "groupPrice": 2841,
+      "cashback": 315,
+      "discount": "-21%",
+      "rating": "3.6",
+      "reviewsCount": 211,
+      "weeklySales": 29,
+      "shortDescription": "A high-quality item from our Audio collection. Designed for excellence and comfort.",
+      "image": "/assets/products/audio-6.jpg",
+      "images": [
+        "/assets/products/audio-6.jpg",
+        "/assets/products/audio-6.jpg",
+        "/assets/products/audio-6.jpg",
+        "/assets/products/audio-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Premium Laptops Item 1",
+      "category": "laptops",
+      "price": 4240,
+      "oldPrice": 6645,
+      "groupPrice": 3816,
+      "cashback": 424,
+      "discount": "-36%",
+      "rating": "4.9",
+      "reviewsCount": 429,
+      "weeklySales": 49,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-1.jpg",
+      "images": [
+        "/assets/products/laptops-1.jpg",
+        "/assets/products/laptops-1.jpg",
+        "/assets/products/laptops-1.jpg",
+        "/assets/products/laptops-1.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Premium Laptops Item 2",
+      "category": "laptops",
+      "price": 2997,
+      "oldPrice": 3324,
+      "groupPrice": 2697,
+      "cashback": 299,
+      "discount": "-10%",
+      "rating": "3.6",
+      "reviewsCount": 339,
+      "weeklySales": 6,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-2.jpg",
+      "images": [
+        "/assets/products/laptops-2.jpg",
+        "/assets/products/laptops-2.jpg",
+        "/assets/products/laptops-2.jpg",
+        "/assets/products/laptops-2.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Premium Laptops Item 3",
+      "category": "laptops",
+      "price": 2551,
+      "oldPrice": 2977,
+      "groupPrice": 2295,
+      "cashback": 255,
+      "discount": "-14%",
+      "rating": "4.0",
+      "reviewsCount": 503,
+      "weeklySales": 87,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-3.jpg",
+      "images": [
+        "/assets/products/laptops-3.jpg",
+        "/assets/products/laptops-3.jpg",
+        "/assets/products/laptops-3.jpg",
+        "/assets/products/laptops-3.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Premium Laptops Item 4",
+      "category": "laptops",
+      "price": 4886,
+      "oldPrice": 6169,
+      "groupPrice": 4397,
+      "cashback": 488,
+      "discount": "-21%",
+      "rating": "4.8",
+      "reviewsCount": 38,
+      "weeklySales": 36,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-4.jpg",
+      "images": [
+        "/assets/products/laptops-4.jpg",
+        "/assets/products/laptops-4.jpg",
+        "/assets/products/laptops-4.jpg",
+        "/assets/products/laptops-4.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Premium Laptops Item 5",
+      "category": "laptops",
+      "price": 3855,
+      "oldPrice": 4365,
+      "groupPrice": 3469,
+      "cashback": 385,
+      "discount": "-12%",
+      "rating": "3.7",
+      "reviewsCount": 129,
+      "weeklySales": 21,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-5.jpg",
+      "images": [
+        "/assets/products/laptops-5.jpg",
+        "/assets/products/laptops-5.jpg",
+        "/assets/products/laptops-5.jpg",
+        "/assets/products/laptops-5.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Premium Laptops Item 6",
+      "category": "laptops",
+      "price": 3538,
+      "oldPrice": 4195,
+      "groupPrice": 3184,
+      "cashback": 353,
+      "discount": "-16%",
+      "rating": "3.7",
+      "reviewsCount": 252,
+      "weeklySales": 89,
+      "shortDescription": "A high-quality item from our Laptops collection. Designed for excellence and comfort.",
+      "image": "/assets/products/laptops-6.jpg",
+      "images": [
+        "/assets/products/laptops-6.jpg",
+        "/assets/products/laptops-6.jpg",
+        "/assets/products/laptops-6.jpg",
+        "/assets/products/laptops-6.jpg"
+      ],
+      "colors": [
+        {
+          "name": "Standard",
+          "hex": "#1a1a1a"
+        },
+        {
+          "name": "Alternative",
+          "hex": "#f5f5f5"
+        }
+      ],
+      "specifications": {
+        "Material": "Premium Quality",
+        "Warranty": "1 Year",
+        "Brand": "Generic"
+      },
+      "features": [
+        "Durable construction",
+        "Modern design",
+        "Best in class"
+      ]
+    }
+  ],
+  "bundles": {
+    "1": [
+      2,
+      3
+    ]
+  },
+  "reviews": {
+    "1": {
+      "averageRating": 4.8,
+      "totalReviews": 128,
+      "ratingBreakdown": {
+        "1": 2,
+        "2": 3,
+        "3": 5,
+        "4": 20,
+        "5": 98
+      },
+      "reviewsList": []
+    }
+  }
+}

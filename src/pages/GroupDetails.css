@@ -1,0 +1,528 @@
+.group-details-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 120px;
+}
+
+.group-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.group-back-btn {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.group-title-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.group-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  background: #e6f9f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #003b46;
+  margin: 0;
+}
+
+.group-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.group-discount-highlight {
+  color: #d97706;
+  font-weight: 700;
+}
+
+.group-invite-banner {
+  background: #e6f9f5;
+  border-radius: 20px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.group-invite-text-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.group-gift-icon {
+  width: 40px;
+  height: 40px;
+  background: #ccece6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-invite-text {
+  font-size: 15px;
+  color: #1a1d20;
+  font-weight: 500;
+  margin: 0;
+}
+
+.group-btn-primary {
+  background: #008b8b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.group-invite-code-box {
+  border: 1px dashed #008b8b;
+  background: #f8fdfc;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.group-code-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.group-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #868e96;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.group-code-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #008b8b;
+}
+
+.group-code-btn {
+  background: #008b8b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.group-code-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.group-progress-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.group-progress-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.group-progress-members-section {
+  flex: 1;
+}
+
+.group-avatars-row {
+  display: flex;
+  align-items: center;
+}
+
+.group-avatar-you {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.group-avatar-you img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-avatar-badge {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #008b8b;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.group-avatar-member {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  border: 2px solid white;
+  margin-left: -12px;
+  overflow: hidden;
+}
+
+.group-avatar-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-avatar-more {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8fdfc;
+  border: 1px dashed #008b8b;
+  margin-left: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #008b8b;
+  z-index: 1;
+}
+
+.group-progress-divider {
+  width: 1px;
+  height: 60px;
+  background: #e9ecef;
+}
+
+.group-progress-target-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.group-target-icon {
+  width: 40px;
+  height: 40px;
+  background: #fff8e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-target-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.group-target-text {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1d20;
+}
+
+.group-target-discount {
+  color: #d97706;
+  font-weight: 800;
+  font-size: 14px;
+  background: #fff8e6;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.group-progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.group-progress-bar-fill {
+  width: 10%;
+  height: 100%;
+  background: #008b8b;
+  border-radius: 3px;
+}
+
+.group-progress-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.group-current-text {
+  color: #1a1d20;
+}
+
+.group-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.group-product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.group-product-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.group-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-product-info {
+  flex: 1;
+}
+
+.group-product-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1d20;
+  margin: 0 0 6px 0;
+}
+
+.group-product-subtitle {
+  font-size: 13px;
+  color: #868e96;
+}
+
+.group-product-price-section {
+  text-align: right;
+  padding-right: 16px;
+  border-right: 1px solid #e9ecef;
+}
+
+.group-product-price {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1d20;
+  margin: 0 0 4px 0;
+}
+
+.group-product-currency {
+  font-size: 12px;
+  font-weight: 600;
+  color: #868e96;
+}
+
+.group-product-savings {
+  font-size: 12px;
+  font-weight: 700;
+  color: #008b8b;
+  background: #e6f9f5;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.group-product-stats {
+  text-align: center;
+  min-width: 60px;
+}
+
+.group-product-added {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #008b8b;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.group-product-added-text {
+  font-size: 11px;
+  color: #868e96;
+  font-weight: 500;
+}
+
+.group-checkout-footer {
+  padding: 24px 0;
+  border-top: 1px solid #e9ecef;
+  margin-top: 16px;
+}
+
+.group-checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.group-checkout-btn {
+  width: 100%;
+  background: #008b8b;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 139, 139, 0.2);
+  text-align: center;
+}
+
+.group-checkout-alert {
+  background: #f8fdfc;
+  border: 1px solid #e6f9f5;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #495057;
+  font-size: 13px;
+}
+
+.group-alert-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 576px) {
+  .group-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .group-back-btn {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .group-invite-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .group-invite-text-section {
+    flex-direction: column;
+  }
+  .group-code-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .group-progress-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .group-progress-divider {
+    width: 100%;
+    height: 1px;
+    margin: 16px 0;
+  }
+  .group-product-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .group-product-price-section {
+    text-align: left;
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+  .group-product-stats {
+    width: 100%;
+    text-align: left;
+  }
+  .group-product-added {
+    justify-content: flex-start;
+  }
+}

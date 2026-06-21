@@ -1,0 +1,55 @@
+import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { ChevronLeft, Search, ChevronDown, Grid, LayoutList, Share2, Heart, Users, Zap, Trash2, Tag, Wallet, Gift, UserPlus } from 'lucide-react';
+import DesktopFilterSidebar from '../components/products/DesktopFilterSidebar';
+import { useProducts } from '../hooks/useProducts';
+
+const CategoryPage = () => {
+  const { t } = useTranslation();
+  const { categoryId } = useParams();
+  const navigate = useNavigate();
+
+  const getCategoryName = () => {
+    if (!categoryId || categoryId === 'all') return 'All Categories';
+    if (categoryId === 'trending') return 'Trending Deals';
+    return categoryId.charAt(0).toUpperCase() + categoryId.slice(1).replace('-', ' ');
+  };
+  const categoryName = getCategoryName();
+  const [priceFilter, setPriceFilter] = useState('all');
+  const [sortBy, setSortBy] = useState('popular');
+  const { products, categories, loading } = useProducts();
+
+  let categoryProducts = categoryId === 'all' || categoryId === 'trending' ? products : products.filter(p => p.category === categoryId);
+  
+  categoryProducts = [...categoryProducts].sort((a, b) => {
+    if (sortBy === 'price-low') return (a.price || 0) - (b.price || 0);
+    if (sortBy === 'price-high') return (b.price || 0) - (a.price || 0);
+    if (sortBy === 'popular') return (b.rating || 5) - (a.rating || 5);
+    return 0;
+  });
+
+  const handleCategoryChange = newCatId => {
+    navigate(`/category/${newCatId}`);
+  };
+
+  return <div style={{
+    backgroundColor: '#f8f9fa',
+    minHeight: '100vh',
+    fontFamily: 'Inter, sans-serif',
+    paddingBottom: '100px'
+  }}>
+      <div style={{
+      background: 'white',
+      borderBottom: '1px solid #e9ecef',
+      padding: '16px 24px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      position: 'sticky',
+      top: 0,
+      zIndex: 50
+    }}>
+        <button onClick={() => navigate(-1)} style={{
+        display: 'flex',
+        alignItems: 'center',

@@ -1,0 +1,4 @@
+[JSXText] Footer.jsx: "Buy"
+[JSXText] Footer.jsx: "SAWA"
+[JSXText] Header.jsx: "Buy"
+[JSXText] Header.jsx: "SAWA"
