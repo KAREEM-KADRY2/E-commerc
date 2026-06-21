@@ -6,12 +6,12 @@ const languages = [{
   code: 'SA',
   name: 'العربية',
   nativeName: 'Arabic',
-  flag: '🇸🇦'
+  flag: ''
 }, {
   code: 'US',
   name: 'English',
   nativeName: 'English',
-  flag: '🇺🇸'
+  flag: ''
 }, {
   code: 'FR',
   name: 'Français',

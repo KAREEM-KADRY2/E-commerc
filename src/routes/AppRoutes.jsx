@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from '../components/layout/ScrollToTop';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -29,7 +29,7 @@ const AppRoutes = () => {
   const groupState = useGroup();
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <Routes>
@@ -63,7 +63,7 @@ const AppRoutes = () => {
       <LanguageModal />
       <AuthModal />
       <Footer />
-    </Router>
+    </>
   );
 };
 

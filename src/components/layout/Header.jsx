@@ -66,8 +66,7 @@ const Header = ({
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <Link to="/" className="logo">
-            <span className="logo-buy">Buy</span>
-            <span className="logo-sawa">SAWA</span>
+            <img src="/images/Buy Sawa-Final logo.png" alt="Buy SAWA Logo" className="logo-image" />
           </Link>
         </div>
 
@@ -93,15 +92,10 @@ const Header = ({
         </nav>
 
         <div className="header-actions">
-          <div style={{
-          position: 'relative'
-        }} ref={dropdownRef}>
+          <div className="dropdown-container" ref={dropdownRef}>
             <button className="icon-btn" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
               <Globe size={18} />
-              <span style={{
-              fontSize: '16px',
-              marginLeft: '4px'
-            }}>{currentLanguage.flag}</span>
+              <span className="lang-icon">{currentLanguage.flag}</span>
             </button>
 
             {isDropdownOpen && <div className="lang-dropdown">
@@ -142,26 +136,13 @@ const Header = ({
               <Wallet size={18} />
               <span>{t("Wallet")}</span>
             </Link>            
-            <div style={{ position: 'relative' }}>
-              <button onClick={() => navigate('/account')} className="user-profile" style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: 0,
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-                <div className="avatar" style={{ background: '#e9ecef', color: '#495057', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="dropdown-container">
+              <button onClick={() => navigate('/account')} className="user-profile">
+                <div className="avatar">
                   <User size={18} />
                 </div>
-                {isLoggedIn && <span className="user-greeting" style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px'
-              }}>{firstName} ▼</span>}
+                {isLoggedIn && <span className="user-greeting">{firstName} ▼</span>}
               </button>
-
-
             </div>
           </div>
         </div>
