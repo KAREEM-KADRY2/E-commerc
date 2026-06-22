@@ -271,10 +271,10 @@ const CategoryPage = () => {
                       marginBottom: '12px'
                     }}>
                       <span style={{ fontSize: '18px', fontWeight: '800', color: '#1a1d20' }}>
-                        {product.price.toLocaleString()}{t("EGP")}
+                        {product.price.toLocaleString()}{t("AED")}
                       </span>
                       <span style={{ fontSize: '13px', color: '#adb5bd', textDecoration: 'line-through', marginBottom: '2px' }}>
-                        {product.oldPrice.toLocaleString()}{t("EGP")}
+                        {product.oldPrice.toLocaleString()}{t("AED")}
                       </span>
                     </div>
 

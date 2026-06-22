@@ -1,1 +1,1 @@
-export const formatPrice = (num) => new Intl.NumberFormat('en-EG').format(num) + ' EGP';
+export const formatPrice = (num) => new Intl.NumberFormat('en-AE').format(num) + ' AED';

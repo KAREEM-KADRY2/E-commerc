@@ -40,11 +40,11 @@ export const productService = {
       setTimeout(() => {
         resolve([
           { id: 'all', label: 'All Prices', min: 0, max: 999999 },
-          { id: 'u500', label: 'Under 500 EGP', min: 0, max: 500 },
-          { id: '500-2k', label: '500 - 2,000 EGP', min: 500, max: 2000 },
-          { id: '2k-10k', label: '2,000 - 10,000 EGP', min: 2000, max: 10000 },
-          { id: '10k-50k', label: '10,000 - 50,000 EGP', min: 10000, max: 50000 },
-          { id: '50k+', label: '50,000+ EGP', min: 50000, max: 999999 }
+          { id: 'u500', label: 'Under 500 AED', min: 0, max: 500 },
+          { id: '500-2k', label: '500 - 2,000 AED', min: 500, max: 2000 },
+          { id: '2k-10k', label: '2,000 - 10,000 AED', min: 2000, max: 10000 },
+          { id: '10k-50k', label: '10,000 - 50,000 AED', min: 10000, max: 50000 },
+          { id: '50k+', label: '50,000+ AED', min: 50000, max: 999999 }
         ]);
       }, 500);
     });

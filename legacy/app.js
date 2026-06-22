@@ -55,7 +55,7 @@ const squadCashbackText = document.getElementById('squadCashbackText');
 const squadSuccessMsg = document.getElementById('squadSuccessMsg');
 
 // Helpers
-const formatPrice = (num) => new Intl.NumberFormat('en-EG').format(num) + ' EGP';
+const formatPrice = (num) => new Intl.NumberFormat('en-AE').format(num) + ' AED';
 
 // Initialize
 function init() {

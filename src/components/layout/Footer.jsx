@@ -258,7 +258,7 @@ const Footer = () => { const { t } = useTranslation();
           {[{
           icon: Truck,
           title: 'Free Shipping',
-          desc: 'Orders over 1,000 EGP'
+          desc: 'Orders over 1,000 AED'
         }, {
           icon: ShieldCheck,
           title: 'Secure Payments',

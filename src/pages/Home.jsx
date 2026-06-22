@@ -55,7 +55,7 @@ const Home = ({ searchQuery, onResetSearch, groupState }) => {
             </div>
             <div className="feature-text">
               <strong>{t("Free Shipping")}</strong>
-              <span>{t("On orders over 1,000 EGP")}</span>
+              <span>{t("On orders over 1,000 AED")}</span>
             </div>
           </div>
           
@@ -65,7 +65,7 @@ const Home = ({ searchQuery, onResetSearch, groupState }) => {
             </div>
             <div className="feature-text">
               <strong>{t("Cashback Rewards")}</strong>
-              <span>{t("Earn up to 15,000 EGP cashback")}</span>
+              <span>{t("Earn up to 15,000 AED cashback")}</span>
             </div>
           </div>
           
