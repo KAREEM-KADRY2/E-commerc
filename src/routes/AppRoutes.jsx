@@ -22,6 +22,8 @@ import GroupDealCheckout from '../pages/GroupDealCheckout';
 import ProductDetails from '../pages/ProductDetails';
 import CartPage from '../pages/CartPage';
 import WishlistPage from '../pages/WishlistPage';
+import OrdersPage from '../pages/OrdersPage';
+import ForgotPassword from '../pages/ForgotPassword';
 import AuthModal from '../components/auth/AuthModal';
 
 const AppRoutes = () => {
@@ -56,6 +58,8 @@ const AppRoutes = () => {
         <Route path="/product/:productId" element={<ProductDetails />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/wishlist" element={<WishlistPage />} />
+        <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
       <CartDrawer />
       <GroupModal groupState={groupState} />

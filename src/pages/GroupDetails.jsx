@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Users, Copy, CheckCircle2, Info, ShieldCheck, Gift, UserPlus } from 'lucide-react';
-import { groupProductsMockData } from '../utils/mockData';
 import GroupMemberProgress from '../components/group/GroupMemberProgress';
 import GroupProductItem from '../components/group/GroupProductItem';
 import './GroupDetails.css';
@@ -12,15 +11,14 @@ const GroupDetails = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const {
-    groupName,
-    products
-  } = location.state || {
-    groupName: 'Glow Serum Group',
-    products: groupProductsMockData
-  };
+    groupName = 'My Group Buy',
+    products = [],
+    inviteCode: stateInviteCode,
+    groupId
+  } = location.state || {};
   
   const [copied, setCopied] = useState(false);
-  const inviteCode = 'GB-W5H3';
+  const inviteCode = stateInviteCode || 'GB-W5H3';
   
   const handleCopy = () => {
     navigator.clipboard.writeText(inviteCode);

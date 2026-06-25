@@ -5,6 +5,7 @@ import { CartProvider } from './context/CartContext';
 import { WishlistProvider } from './context/WishlistContext';
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { ShareProvider } from './context/ShareContext';
 import AuthModal from './components/auth/AuthModal';
 import './assets/styles/global.css';
 
@@ -14,9 +15,11 @@ function App() {
       <LanguageProvider>
         <ToastProvider>
           <WishlistProvider>
-            <CartProvider>
-              <AppRoutes />
-            </CartProvider>
+            <ShareProvider>
+              <CartProvider>
+                <AppRoutes />
+              </CartProvider>
+            </ShareProvider>
           </WishlistProvider>
         </ToastProvider>
       </LanguageProvider>

@@ -1,0 +1,366 @@
+[GET] {{base_url}}/api/v1/markets/current
+Body:
+
+
+[GET] {{base_url}}/api/v1/store
+Body:
+
+
+[POST] {{base_url}}/api/v1/auth/register
+Body:
+{
+    "name": "Test User",
+    "email": "test.user@example.com",
+    "phone": "{{user_phone}}",
+    "birth_date": "1995-06-15",
+    "password": "password123",
+    "password_confirmation": "password123"
+}
+
+[POST] {{base_url}}/api/v1/auth/register
+Body:
+["name: Test User","email: test.user@example.com","phone: {{user_phone}}","birth_date: 1995-06-15","password: password123","password_confirmation: password123","image: undefined"]
+
+[POST] {{base_url}}/api/v1/auth/verify-otp
+Body:
+{
+    "phone": "{{user_phone}}",
+    "token": "123456",
+    "fcm_token": "optional-fcm-device-token"
+}
+
+[POST] {{base_url}}/api/v1/auth/resend-otp
+Body:
+{
+    "phone": "{{user_phone}}"
+}
+
+[POST] {{base_url}}/api/v1/auth/login
+Body:
+{
+    "phone": "{{user_phone}}",
+    "password": "{{user_password}}",
+    "fcm_token": "optional-fcm-device-token"
+}
+
+[POST] {{base_url}}/api/v1/auth/firebase-login
+Body:
+{
+    "id_token": "firebase-id-token-here",
+    "device_name": "Postman",
+    "fcm_token": "optional-fcm-device-token"
+}
+
+[GET] {{base_url}}/api/v1/auth/profile
+Body:
+
+
+[POST] {{base_url}}/api/v1/auth/logout
+Body:
+
+
+[POST] {{base_url}}/api/v1/auth/forgot/password
+Body:
+{
+    "phone": "{{user_phone}}"
+}
+
+[POST] {{base_url}}/api/v1/auth/forgot/verify-otp
+Body:
+{
+    "phone": "{{user_phone}}",
+    "token": "123456"
+}
+
+[POST] {{base_url}}/api/v1/auth/forgot/resend-otp
+Body:
+{
+    "phone": "{{user_phone}}"
+}
+
+[POST] {{base_url}}/api/v1/auth/forgot/reset-password
+Body:
+{
+    "phone": "{{user_phone}}",
+    "password": "newpassword123",
+    "password_confirmation": "newpassword123"
+}
+
+[GET] {{base_url}}/api/v1/products
+Body:
+
+
+[GET] {{base_url}}/api/v1/products/{{product_slug}}
+Body:
+
+
+[GET] {{base_url}}/api/v1/products/compare
+Body:
+
+
+[GET] {{base_url}}/api/v1/products/facets
+Body:
+
+
+[GET] {{base_url}}/api/v1/categories
+Body:
+
+
+[GET] {{base_url}}/api/v1/categories/{{category_slug}}
+Body:
+
+
+[GET] {{base_url}}/api/v1/brands
+Body:
+
+
+[GET] {{base_url}}/api/v1/locations/countries
+Body:
+
+
+[GET] {{base_url}}/api/v1/locations/governorates/{{country_id}}
+Body:
+
+
+[GET] {{base_url}}/api/v1/locations/cities/{{governorate_id}}
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/settings
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/about
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/privacy
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/terms
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/faq
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/banners
+Body:
+
+
+[GET] {{base_url}}/api/v1/content/welcome-screens
+Body:
+
+
+[POST] {{base_url}}/api/v1/content/contact
+Body:
+{
+    "name": "Guest User",
+    "email": "guest@example.com",
+    "phone": "+971509999999",
+    "subject": "Order inquiry",
+    "message": "I have a question about my order."
+}
+
+[POST] {{base_url}}/api/v1/content/contact
+Body:
+{
+    "subject": "Account question",
+    "message": "Please contact me regarding my account."
+}
+
+[GET] {{base_url}}/api/v1/cart
+Body:
+
+
+[POST] {{base_url}}/api/v1/cart/items
+Body:
+{
+    "product_id": {{product_id}},
+    "product_variant_id": null,
+    "quantity": 1
+}
+
+[PUT] {{base_url}}/api/v1/cart/items/{{cart_item_id}}
+Body:
+{
+    "quantity": 2
+}
+
+[DELETE] {{base_url}}/api/v1/cart/items/{{cart_item_id}}
+Body:
+
+
+[DELETE] {{base_url}}/api/v1/cart
+Body:
+
+
+[POST] {{base_url}}/api/v1/coupons/validate
+Body:
+{
+    "code": "{{coupon_code}}"
+}
+
+[POST] {{base_url}}/api/v1/checkout
+Body:
+{
+    "phone": "{{user_phone}}",
+    "country_id": {{country_id}},
+    "governorate_id": {{governorate_id}},
+    "city_id": {{city_id}},
+    "address": "123 Sheikh Zayed Road, Downtown Dubai",
+    "notes": "Please call before delivery",
+    "payment_method": "cash_on_delivery",
+    "coupon_code": "",
+    "group_buy_code": ""
+}
+
+[GET] {{base_url}}/api/v1/orders
+Body:
+
+
+[GET] {{base_url}}/api/v1/orders/{{order_id}}
+Body:
+
+
+[PATCH] {{base_url}}/api/v1/orders/{{order_id}}/cancel
+Body:
+
+
+[GET] {{base_url}}/api/v1/favorites
+Body:
+
+
+[POST] {{base_url}}/api/v1/favorites
+Body:
+{
+    "product_id": {{product_id}}
+}
+
+[DELETE] {{base_url}}/api/v1/favorites/{{product_id}}
+Body:
+
+
+[GET] {{base_url}}/api/v1/wallet
+Body:
+
+
+[GET] {{base_url}}/api/v1/wallet/transactions
+Body:
+
+
+[GET] {{base_url}}/api/v1/group-buys/invite/{{invite_code}}
+Body:
+
+
+[POST] {{base_url}}/api/v1/group-buys
+Body:
+{
+    "name": "Office Phone Deal",
+    "product_ids": [
+        1,
+        2
+    ],
+    "duration_hours": 48
+}
+
+[POST] {{base_url}}/api/v1/group-buys/{{group_buy_id}}/publish
+Body:
+
+
+[GET] {{base_url}}/api/v1/group-buys/mine
+Body:
+
+
+[GET] {{base_url}}/api/v1/group-buys/{{group_buy_id}}
+Body:
+
+
+[POST] {{base_url}}/api/v1/group-buys/invite/{{invite_code}}/join
+Body:
+
+
+[GET] {{base_url}}/api/v1/products/{{product_id}}/reviews
+Body:
+
+
+[POST] {{base_url}}/api/v1/products/{{product_id}}/reviews
+Body:
+{
+    "rate": 5,
+    "comment": "Excellent product, fast delivery!"
+}
+
+[GET] {{base_url}}/api/v1/notifications
+Body:
+
+
+[GET] {{base_url}}/api/v1/notifications/unread-count
+Body:
+
+
+[PATCH] {{base_url}}/api/v1/notifications/{{notification_id}}/read
+Body:
+
+
+[PATCH] {{base_url}}/api/v1/notifications/read-all
+Body:
+
+
+[POST] {{base_url}}/api/v1/webhooks/payments/{{payment_driver}}/{{market_code}}/paid
+Body:
+{
+    "invoice_id": "sample-invoice-id",
+    "order_id": "{{order_id}}",
+    "status": "paid"
+}
+
+[POST] {{base_url}}/api/v1/webhooks/payments/{{payment_driver}}/{{market_code}}/failed
+Body:
+{
+    "invoice_id": "sample-invoice-id",
+    "order_id": "{{order_id}}",
+    "status": "failed"
+}
+
+[POST] {{base_url}}/api/v1/auth/login
+Body:
+{
+    "phone": "{{user_phone}}",
+    "password": "{{user_password}}"
+}
+
+[GET] {{base_url}}/api/v1/products
+Body:
+
+
+[POST] {{base_url}}/api/v1/cart/items
+Body:
+{
+    "product_id": {{product_id}},
+    "quantity": 1
+}
+
+[POST] {{base_url}}/api/v1/coupons/validate
+Body:
+{
+    "code": "{{coupon_code}}"
+}
+
+[POST] {{base_url}}/api/v1/checkout
+Body:
+{
+    "phone": "{{user_phone}}",
+    "country_id": {{country_id}},
+    "governorate_id": {{governorate_id}},
+    "city_id": {{city_id}},
+    "address": "123 Test Street, Dubai",
+    "payment_method": "cash_on_delivery"
+}
+
+[GET] {{base_url}}/api/v1/orders/{{order_id}}
+Body:
+
+

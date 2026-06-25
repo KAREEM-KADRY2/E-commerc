@@ -1,0 +1,274 @@
+# API Endpoints Summary
+
+**[01 — Setup & Health] Get Current Market**
+- Method: GET
+- URL: {{base_url}}/api/v1/markets/current
+
+**[01 — Setup & Health] Get Active Store**
+- Method: GET
+- URL: {{base_url}}/api/v1/store
+
+**[02 — Authentication] Register Client (JSON)**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/register
+
+**[02 — Authentication] Register Client (with Image)**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/register
+
+**[02 — Authentication] Verify OTP**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/verify-otp
+
+**[02 — Authentication] Resend OTP**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/resend-otp
+
+**[02 — Authentication] Login**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/login
+
+**[02 — Authentication] Firebase Login**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/firebase-login
+
+**[02 — Authentication] Get Profile**
+- Method: GET
+- URL: {{base_url}}/api/v1/auth/profile
+
+**[02 — Authentication] Logout**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/logout
+
+**[03 — Password Recovery] Forgot Password (Send OTP)**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/forgot/password
+
+**[03 — Password Recovery] Verify Forgot OTP**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/forgot/verify-otp
+
+**[03 — Password Recovery] Resend Forgot OTP**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/forgot/resend-otp
+
+**[03 — Password Recovery] Reset Password**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/forgot/reset-password
+
+**[04 — Products] List Products**
+- Method: GET
+- URL: {{base_url}}/api/v1/products
+
+**[04 — Products] Get Product by Slug**
+- Method: GET
+- URL: {{base_url}}/api/v1/products/{{product_slug}}
+
+**[04 — Products] Compare Products**
+- Method: GET
+- URL: {{base_url}}/api/v1/products/compare
+
+**[04 — Products] Get Category Facets**
+- Method: GET
+- URL: {{base_url}}/api/v1/products/facets
+
+**[05 — Categories & Brands] List Categories**
+- Method: GET
+- URL: {{base_url}}/api/v1/categories
+
+**[05 — Categories & Brands] Get Category by Slug**
+- Method: GET
+- URL: {{base_url}}/api/v1/categories/{{category_slug}}
+
+**[05 — Categories & Brands] List Brands**
+- Method: GET
+- URL: {{base_url}}/api/v1/brands
+
+**[06 — Locations] List Countries**
+- Method: GET
+- URL: {{base_url}}/api/v1/locations/countries
+
+**[06 — Locations] List Governorates**
+- Method: GET
+- URL: {{base_url}}/api/v1/locations/governorates/{{country_id}}
+
+**[06 — Locations] List Cities**
+- Method: GET
+- URL: {{base_url}}/api/v1/locations/cities/{{governorate_id}}
+
+**[07 — Content (CMS)] Get Settings**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/settings
+
+**[07 — Content (CMS)] Get About**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/about
+
+**[07 — Content (CMS)] Get Privacy Policy**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/privacy
+
+**[07 — Content (CMS)] Get Terms**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/terms
+
+**[07 — Content (CMS)] Get FAQ**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/faq
+
+**[07 — Content (CMS)] Get Banners**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/banners
+
+**[07 — Content (CMS)] Get Welcome Screens**
+- Method: GET
+- URL: {{base_url}}/api/v1/content/welcome-screens
+
+**[07 — Content (CMS)] Submit Contact (Guest)**
+- Method: POST
+- URL: {{base_url}}/api/v1/content/contact
+
+**[07 — Content (CMS)] Submit Contact (Authenticated)**
+- Method: POST
+- URL: {{base_url}}/api/v1/content/contact
+
+**[08 — Cart] Get Cart**
+- Method: GET
+- URL: {{base_url}}/api/v1/cart
+
+**[08 — Cart] Add Item to Cart**
+- Method: POST
+- URL: {{base_url}}/api/v1/cart/items
+
+**[08 — Cart] Update Cart Item**
+- Method: PUT
+- URL: {{base_url}}/api/v1/cart/items/{{cart_item_id}}
+
+**[08 — Cart] Remove Cart Item**
+- Method: DELETE
+- URL: {{base_url}}/api/v1/cart/items/{{cart_item_id}}
+
+**[08 — Cart] Clear Cart**
+- Method: DELETE
+- URL: {{base_url}}/api/v1/cart
+
+**[09 — Coupons] Validate Coupon**
+- Method: POST
+- URL: {{base_url}}/api/v1/coupons/validate
+
+**[10 — Checkout & Orders] Checkout**
+- Method: POST
+- URL: {{base_url}}/api/v1/checkout
+
+**[10 — Checkout & Orders] List Orders**
+- Method: GET
+- URL: {{base_url}}/api/v1/orders
+
+**[10 — Checkout & Orders] Get Order**
+- Method: GET
+- URL: {{base_url}}/api/v1/orders/{{order_id}}
+
+**[10 — Checkout & Orders] Cancel Order**
+- Method: PATCH
+- URL: {{base_url}}/api/v1/orders/{{order_id}}/cancel
+
+**[11 — Favorites (Wishlist)] List Favorites**
+- Method: GET
+- URL: {{base_url}}/api/v1/favorites
+
+**[11 — Favorites (Wishlist)] Add Favorite**
+- Method: POST
+- URL: {{base_url}}/api/v1/favorites
+
+**[11 — Favorites (Wishlist)] Remove Favorite**
+- Method: DELETE
+- URL: {{base_url}}/api/v1/favorites/{{product_id}}
+
+**[12 — Wallet] Get Wallet**
+- Method: GET
+- URL: {{base_url}}/api/v1/wallet
+
+**[12 — Wallet] List Wallet Transactions**
+- Method: GET
+- URL: {{base_url}}/api/v1/wallet/transactions
+
+**[13 — Group Buys] View Group Buy by Invite (Public)**
+- Method: GET
+- URL: {{base_url}}/api/v1/group-buys/invite/{{invite_code}}
+
+**[13 — Group Buys] Create Group Buy**
+- Method: POST
+- URL: {{base_url}}/api/v1/group-buys
+
+**[13 — Group Buys] Publish Group Buy**
+- Method: POST
+- URL: {{base_url}}/api/v1/group-buys/{{group_buy_id}}/publish
+
+**[13 — Group Buys] List My Group Buys**
+- Method: GET
+- URL: {{base_url}}/api/v1/group-buys/mine
+
+**[13 — Group Buys] Get Group Buy**
+- Method: GET
+- URL: {{base_url}}/api/v1/group-buys/{{group_buy_id}}
+
+**[13 — Group Buys] Join Group Buy**
+- Method: POST
+- URL: {{base_url}}/api/v1/group-buys/invite/{{invite_code}}/join
+
+**[14 — Product Reviews] List Product Reviews**
+- Method: GET
+- URL: {{base_url}}/api/v1/products/{{product_id}}/reviews
+
+**[14 — Product Reviews] Submit Product Review**
+- Method: POST
+- URL: {{base_url}}/api/v1/products/{{product_id}}/reviews
+
+**[15 — Notifications] List Notifications**
+- Method: GET
+- URL: {{base_url}}/api/v1/notifications
+
+**[15 — Notifications] Get Unread Count**
+- Method: GET
+- URL: {{base_url}}/api/v1/notifications/unread-count
+
+**[15 — Notifications] Mark Notification as Read**
+- Method: PATCH
+- URL: {{base_url}}/api/v1/notifications/{{notification_id}}/read
+
+**[15 — Notifications] Mark All as Read**
+- Method: PATCH
+- URL: {{base_url}}/api/v1/notifications/read-all
+
+**[16 — Payment Webhooks (Backend/QA)] Payment Paid Webhook**
+- Method: POST
+- URL: {{base_url}}/api/v1/webhooks/payments/{{payment_driver}}/{{market_code}}/paid
+
+**[16 — Payment Webhooks (Backend/QA)] Payment Failed Webhook**
+- Method: POST
+- URL: {{base_url}}/api/v1/webhooks/payments/{{payment_driver}}/{{market_code}}/failed
+
+**[17 — Workflows] ① Login**
+- Method: POST
+- URL: {{base_url}}/api/v1/auth/login
+
+**[17 — Workflows] ② Browse Products**
+- Method: GET
+- URL: {{base_url}}/api/v1/products
+
+**[17 — Workflows] ③ Add to Cart**
+- Method: POST
+- URL: {{base_url}}/api/v1/cart/items
+
+**[17 — Workflows] ④ Validate Coupon**
+- Method: POST
+- URL: {{base_url}}/api/v1/coupons/validate
+
+**[17 — Workflows] ⑤ Checkout**
+- Method: POST
+- URL: {{base_url}}/api/v1/checkout
+
+**[17 — Workflows] ⑥ View Order**
+- Method: GET
+- URL: {{base_url}}/api/v1/orders/{{order_id}}
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Search, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { getProductsByCategory } from '../services/api';
+import { productService } from '../services/productService';
 import DesktopFilterSidebar from '../components/products/DesktopFilterSidebar';
 import CategoryPromoBanner from '../components/categories/CategoryPromoBanner';
 import CategoryProductCard from '../components/categories/CategoryProductCard';
@@ -20,7 +20,8 @@ const CategoryPage = () => {
     const fetchCategoryProducts = async () => {
       setLoading(true);
       try {
-        const products = await getProductsByCategory(categoryName);
+        const response = await productService.getProducts({ category: categoryName });
+        const products = Array.isArray(response) ? response : (response?.data || []);
         setCategoryProducts(products);
       } catch (err) {
         console.error("Failed to fetch products for category:", err);

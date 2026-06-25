@@ -1,11 +1,19 @@
 import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Star, Truck, ShieldCheck, Undo2, Plus, Minus, Users, Zap, ShoppingCart } from 'lucide-react';
+import { Star, Truck, ShieldCheck, Undo2, Plus, Minus, Users, Zap, ShoppingCart, Share2 } from 'lucide-react';
+import { useToast } from '../../context/ToastContext';
+import { useCartContext } from '../../context/CartContext';
+import { useAuth } from '../../context/AuthContext';
+import { productShareService } from '../../services/productShareService';
 
 const ProductInfoRight = ({ product }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { showToast } = useToast();
+  const { addToCart } = useCartContext();
+  const { isLoggedIn, openAuthModal } = useAuth();
+  const [isSharing, setIsSharing] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [selectedOptions, setSelectedOptions] = useState({
     color: product.colors?.[0]?.name || '',
@@ -24,6 +32,33 @@ const ProductInfoRight = ({ product }) => {
 
   const handleStartGroup = () => {
     navigate('/active-group-buys');
+  };
+
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
+
+  const handleShare = async () => {
+    if (!isLoggedIn) {
+      openAuthModal('login');
+      return;
+    }
+    try {
+      setIsSharing(true);
+      const response = await productShareService.createProductShare(product.id);
+      if (response && response.share_url) {
+        await navigator.clipboard.writeText(response.share_url);
+        showToast(t("Share link copied to clipboard!"));
+      } else {
+        // Fallback or handle differently
+        await navigator.clipboard.writeText(`${window.location.origin}/product/${product.id}?share_code=test_123`);
+        showToast(t("Share link copied to clipboard!"));
+      }
+    } catch (err) {
+      showToast(t("Failed to generate share link"));
+    } finally {
+      setIsSharing(false);
+    }
   };
 
   return (
@@ -143,8 +178,8 @@ const ProductInfoRight = ({ product }) => {
           <button onClick={increaseQuantity}><Plus size={16} /></button>
         </div>
         
-        <div className="premium-buttons" style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
-          <button className="btn-outline-hover" style={{
+        <div className="premium-buttons" style={{ display: 'flex', gap: '16px', marginTop: '16px', flexWrap: 'wrap' }}>
+          <button className="btn-outline-hover" onClick={handleAddToCart} style={{
             flex: 1,
             background: 'white',
             border: '2px solid #008b8b',
@@ -157,7 +192,8 @@ const ProductInfoRight = ({ product }) => {
             alignItems: 'center',
             justifyContent: 'center',
             cursor: 'pointer',
-            transition: 'all 0.2s ease'
+            transition: 'all 0.2s ease',
+            minWidth: '150px'
           }}>
             {t("Add to Cart")}
           </button>
@@ -177,11 +213,36 @@ const ProductInfoRight = ({ product }) => {
             gap: '8px',
             cursor: 'pointer',
             transition: 'all 0.2s ease',
-            boxShadow: '0 4px 12px rgba(0, 139, 139, 0.2)'
+            boxShadow: '0 4px 12px rgba(0, 139, 139, 0.2)',
+            minWidth: '150px'
           }}>
             <Zap size={20} fill="#FFA726" color="#FFA726" /> {t("Start Group Buy")}
           </button>
+
+          <button className="btn-outline-hover share-btn" onClick={handleShare} disabled={isSharing} style={{
+            flex: 1,
+            background: '#f8f9fa',
+            border: '1px solid #dee2e6',
+            color: '#495057',
+            padding: '16px 0',
+            borderRadius: '16px',
+            fontSize: '16px',
+            fontWeight: '600',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            cursor: isSharing ? 'not-allowed' : 'pointer',
+            opacity: isSharing ? 0.7 : 1,
+            transition: 'all 0.2s ease',
+            minWidth: '150px'
+          }}>
+            <Share2 size={20} /> {isSharing ? t("Generating...") : t("Share")}
+          </button>
         </div>
+        <p className="share-info-text" style={{ marginTop: '12px', fontSize: '14px', color: '#6c757d', textAlign: 'center' }}>
+          {t("Share with your friends to unlock extra discounts.")}
+        </p>
       </div>
 
     </div>

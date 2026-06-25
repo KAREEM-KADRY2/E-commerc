@@ -1,8 +1,9 @@
-﻿import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Users, Plus, ChevronRight, PackageOpen, ShieldCheck, X } from 'lucide-react';
 import AddProductsModal from '../components/ui/AddProductsModal';
+import { groupBuyService } from '../services/groupBuyService';
 const StartGroupBuy = () => {
   const {
     t
@@ -11,18 +12,37 @@ const StartGroupBuy = () => {
   const [groupName, setGroupName] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProducts, setSelectedProducts] = useState([]);
-  const handleCreateGroup = () => {
+  const handleCreateGroup = async () => {
     if (selectedProducts.length === 0) {
       return;
     }
     const finalGroupName = groupName.trim() || 'My Group Buy';
-    // Navigate to group details with state
-    navigate('/group-details', {
-      state: {
-        groupName: finalGroupName,
-        products: selectedProducts
-      }
-    });
+    try {
+      const payload = {
+        name: finalGroupName,
+        product_ids: selectedProducts.map(p => p.id),
+        duration_hours: 48
+      };
+      const res = await groupBuyService.createGroupBuy(payload);
+      const newGroup = res.data || res;
+      navigate('/group-details', {
+        state: {
+          groupName: newGroup.name || finalGroupName,
+          products: selectedProducts,
+          inviteCode: newGroup.invite_code || newGroup.code,
+          groupId: newGroup.id
+        }
+      });
+    } catch (e) {
+      console.error("Error creating group:", e);
+      // Fallback
+      navigate('/group-details', {
+        state: {
+          groupName: finalGroupName,
+          products: selectedProducts
+        }
+      });
+    }
   };
   const removeProduct = id => {
     setSelectedProducts(prev => prev.filter(p => p.id !== id));

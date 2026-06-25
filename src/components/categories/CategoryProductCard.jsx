@@ -43,11 +43,13 @@ const CategoryProductCard = ({ product }) => {
 
         <div className="category-product-price-row">
           <span className="category-product-price">
-            {product.price.toLocaleString()}{t("AED")}
+            {product.price?.toLocaleString()}{t("AED")}
           </span>
-          <span className="category-product-old-price">
-            {product.oldPrice.toLocaleString()}{t("AED")}
-          </span>
+          {product.oldPrice && (
+            <span className="category-product-old-price">
+              {product.oldPrice?.toLocaleString()}{t("AED")}
+            </span>
+          )}
         </div>
 
         <div className="category-product-actions">

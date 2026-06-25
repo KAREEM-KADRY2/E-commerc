@@ -46,7 +46,7 @@ const ProductReviewsSection = ({ reviews }) => {
         {/* Middle: Breakdown */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '12px', maxWidth: '300px' }}>
           {[5, 4, 3, 2, 1].map(star => {
-            const count = reviews.breakdown?.[star] || mockBreakdown[star];
+            const count = reviews.breakdown?.[star] || defaultBreakdown[star];
             const pct = Math.round(getPercentage(count) || (count / totalRev) * 100);
             return (
               <div key={star} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

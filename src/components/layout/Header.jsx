@@ -6,6 +6,7 @@ import { useWishlistContext } from '../../context/WishlistContext';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage, languages } from '../../context/LanguageContext';
 import { useTranslation } from 'react-i18next';
+import NotificationsDropdown from './NotificationsDropdown';
 import './Header.css';
 const Header = ({
   searchQuery,
@@ -122,9 +123,7 @@ const Header = ({
             {cartTotalItems > 0 && <span className="badge">{cartTotalItems}</span>}
           </button>
 
-          <button className="icon-btn">
-            <Bell size={20} />
-          </button>
+          <NotificationsDropdown />
 
           <div className="desktop-only-actions">
             <Link to={isLoggedIn ? '/wallet' : '#'} onClick={e => {

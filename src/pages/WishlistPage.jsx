@@ -57,9 +57,6 @@ const WishlistPage = () => {
         gap: '24px'
       }}>
             {wishlist.map(product => {
-          const {
-            t
-          } = useTranslation();
           return <ProductCard key={product.id} product={product} />;
         })}
           </div>}

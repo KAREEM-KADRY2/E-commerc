@@ -1,26 +1,64 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 import { Play, Users, Plus, Hash, ChevronRight, ChevronDown } from 'lucide-react';
 import GroupBuyCard from '../components/group/GroupBuyCard';
-import { activeGroupsMockData as groups } from '../utils/mockData';
+import { groupBuyService } from '../services/groupBuyService';
+import { useToast } from '../context/ToastContext';
 import './ActiveGroupBuys.css';
 
 const ActiveGroupBuys = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { showToast } = useToast();
+  
+  const [groups, setGroups] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('All Groups');
+  const [joinCode, setJoinCode] = useState('');
 
-  const statuses = [...new Set(groups.map(g => g.status))];
+  useEffect(() => {
+    const fetchGroups = async () => {
+      setLoading(true);
+      try {
+        const res = await groupBuyService.getMyGroupBuys();
+        const data = Array.isArray(res) ? res : (res?.data || []);
+        setGroups(data);
+      } catch (error) {
+        console.error("Failed to load group buys", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchGroups();
+  }, []);
+
+  const handleJoin = async () => {
+    if (!joinCode.trim()) return;
+    try {
+      await groupBuyService.joinGroupByInviteCode(joinCode.trim());
+      showToast(t("Joined group successfully!"));
+      // Refresh list
+      const res = await groupBuyService.getMyGroupBuys();
+      setGroups(Array.isArray(res) ? res : (res?.data || []));
+      setJoinCode('');
+    } catch (e) {
+      showToast(t("Failed to join or invalid code"));
+    }
+  };
+
+  const statuses = [...new Set(groups.map(g => g.status || 'Active'))];
   const activeTabCounts = groups.reduce((acc, g) => {
-    acc[g.status] = (acc[g.status] || 0) + 1;
+    const s = g.status || 'Active';
+    acc[s] = (acc[s] || 0) + 1;
     return acc;
   }, {});
   const dynamicTabs = ['All Groups', ...statuses.map(status => `${status} (${activeTabCounts[status]})`)];
 
   const filteredGroups = groups.filter(group => {
     if (activeTab === 'All Groups') return true;
-    return activeTab.startsWith(group.status);
+    const s = group.status || 'Active';
+    return activeTab.startsWith(s);
   });
 
   return (
@@ -68,11 +106,13 @@ const ActiveGroupBuys = () => {
                 <Hash size={18} color="#adb5bd" className="agb-input-icon" />
                 <input 
                   type="text" 
+                  value={joinCode}
+                  onChange={e => setJoinCode(e.target.value)}
                   placeholder={t("Enter Group Code (e.g., GB-X72A)")} 
                   className="agb-join-input"
                 />
               </div>
-              <button className="agb-join-btn">
+              <button className="agb-join-btn" onClick={handleJoin}>
                 {t("Join Now")} <Play size={12} fill="white" />
               </button>
             </div>
@@ -120,7 +160,9 @@ const ActiveGroupBuys = () => {
         </div>
 
         <div className="agb-groups-list">
-          {filteredGroups.length === 0 ? (
+          {loading ? (
+             <div style={{ padding: '40px', textAlign: 'center' }}>{t("Loading...")}</div>
+          ) : filteredGroups.length === 0 ? (
             <div className="agb-empty-state">
               {t("No groups found in this category.")}
             </div>

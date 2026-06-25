@@ -157,7 +157,7 @@ const AuthModal = () => {
 
         <div className="auth-modal-footer">
           {mode === 'login' ? <>
-              <a href="#" className="auth-forgot-link">نسيت كلمة المرور؟</a>
+              <a href="#" className="auth-forgot-link" onClick={(e) => { e.preventDefault(); closeAuthModal(); navigate('/forgot-password'); }}>نسيت كلمة المرور؟</a>
               <p>
                 ليس لديك حساب؟{' '}
                 <button className="auth-switch-btn" onClick={() => setMode('signup')}>

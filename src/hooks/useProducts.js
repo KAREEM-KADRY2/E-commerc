@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getProducts, getCategories } from '../services/api';
+import { productService } from '../services/productService';
 
 export const useProducts = () => {
   const [products, setProducts] = useState([]);
@@ -11,12 +11,17 @@ export const useProducts = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const [productsData, categoriesData] = await Promise.all([
-          getProducts(),
-          getCategories()
+        const [productsRes, categoriesRes] = await Promise.all([
+          productService.fetchProducts(),
+          productService.fetchCategories()
         ]);
-        setProducts(productsData);
-        setCategories(categoriesData);
+        
+        // Handle paginated or unpaginated data arrays
+        const productsArray = Array.isArray(productsRes) ? productsRes : (productsRes.data || []);
+        const categoriesArray = Array.isArray(categoriesRes) ? categoriesRes : (categoriesRes.data || []);
+
+        setProducts(productsArray);
+        setCategories(categoriesArray);
         setError(null);
       } catch (err) {
         setError('Failed to fetch data');

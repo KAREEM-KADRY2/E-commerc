@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getProductById, getRelatedProducts, getProductReviews, getProductBundle } from '../services/api';
+import { productService } from '../services/productService';
 import ProductGallery from '../components/product/ProductGallery';
 import ProductInfoRight from '../components/product/ProductInfoRight';
 import ProductTabs from '../components/product/ProductTabs';
@@ -28,14 +28,14 @@ const ProductDetails = () => {
     const fetchProductData = async () => {
       setLoading(true);
       try {
-        const prodData = await getProductById(productId);
+        const prodData = await productService.getProductById(productId);
         if (prodData) {
           setProduct(prodData);
-          const relatedData = await getRelatedProducts(prodData.category, prodData.id);
+          const relatedData = await productService.getRelatedProducts(prodData.id);
           setRelatedProducts(relatedData);
-          const reviewsData = await getProductReviews(prodData.id);
+          const reviewsData = await productService.getProductReviews(prodData.id);
           setReviews(reviewsData);
-          const bundleData = await getProductBundle(prodData.id);
+          const bundleData = await productService.getProductBundle(prodData.id);
           setBundle(bundleData);
           const savedRecentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
           const filteredRecentlyViewed = savedRecentlyViewed.filter(p => p.id !== prodData.id);
