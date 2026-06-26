@@ -1,7 +1,7 @@
 import axios from 'axios';
 import i18n from '../i18n'; // Assuming i18n is exported from this file or you can get the language from localStorage.
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://buysawa.com';
 
 const api = axios.create({
   baseURL: `${API_BASE_URL}/api/v1`,
