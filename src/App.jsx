@@ -6,6 +6,7 @@ import { WishlistProvider } from './context/WishlistContext';
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
 import { ShareProvider } from './context/ShareContext';
+import { MarketProvider } from './context/MarketContext';
 import AuthModal from './components/auth/AuthModal';
 import './assets/styles/global.css';
 
@@ -16,9 +17,11 @@ function App() {
         <ToastProvider>
           <WishlistProvider>
             <ShareProvider>
-              <CartProvider>
-                <AppRoutes />
-              </CartProvider>
+              <MarketProvider>
+                <CartProvider>
+                  <AppRoutes />
+                </CartProvider>
+              </MarketProvider>
             </ShareProvider>
           </WishlistProvider>
         </ToastProvider>

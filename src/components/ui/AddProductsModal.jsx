@@ -3,39 +3,9 @@ import React, { useState } from 'react';
 import { X, Search, ShoppingBag, Plus, ArrowRight } from 'lucide-react';
 import './AddProductsModal.css';
 
-const productsList = [{
-  id: 1,
-  name: 'PowerBank 20k mAh',
-  price: 99,
-  code: 'PB20K',
-  image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=150&q=80'
-}, {
-  id: 2,
-  name: 'Sony WH-1000XM5',
-  price: 1299,
-  code: 'SONYXM5',
-  image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=150&q=80'
-}, {
-  id: 3,
-  name: 'Glow Serum Set',
-  price: 189,
-  code: 'GLOW01',
-  image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=150&q=80'
-}, {
-  id: 4,
-  name: "Nike Air Max '24",
-  price: 549,
-  code: 'AIRMAX24',
-  image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=150&q=80'
-}, {
-  id: 5,
-  name: 'Apple Watch Series 9',
-  price: 1899,
-  code: 'AW9-45',
-  image: 'https://images.unsplash.com/photo-1434493789847-2902a52dda56?w=150&q=80'
-}];
+// Mock data removed. Products are now passed via props.
 
-const AddProductsModal = ({ isOpen, onClose, onAddProducts }) => {
+const AddProductsModal = ({ isOpen, onClose, onAddProducts, productsList = [] }) => {
   const { t } = useTranslation();
   const [selectedIds, setSelectedIds] = useState([]);
   const [search, setSearch] = useState('');

@@ -7,10 +7,12 @@ import ProductsGrid from '../components/products/ProductsGrid';
 import TopDeals from '../components/home/TopDeals';
 import { useProducts } from '../hooks/useProducts';
 import { useTranslation } from 'react-i18next';
+import { useMarket } from '../context/MarketContext';
 
 const Home = ({ searchQuery, onResetSearch, groupState }) => {
   const { t } = useTranslation();
   const { products, categories, loading, error } = useProducts();
+  const { marketData } = useMarket();
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -55,7 +57,7 @@ const Home = ({ searchQuery, onResetSearch, groupState }) => {
             </div>
             <div className="feature-text">
               <strong>{t("Free Shipping")}</strong>
-              <span>{t("On orders over 1,000 AED")}</span>
+              <span>{t("On orders over")} {marketData?.min_order || 1000} {marketData?.currency_symbol || t("AED")}</span>
             </div>
           </div>
           
@@ -65,7 +67,7 @@ const Home = ({ searchQuery, onResetSearch, groupState }) => {
             </div>
             <div className="feature-text">
               <strong>{t("Cashback Rewards")}</strong>
-              <span>{t("Earn up to 15,000 AED cashback")}</span>
+              <span>{t("Earn big cashback on group buys")}</span>
             </div>
           </div>
           

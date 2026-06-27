@@ -58,8 +58,8 @@ export const productService = {
     try {
       // Build query string from filters
       const params = new URLSearchParams();
-      if (filters.category) params.append('category', filters.category);
-      if (filters.brand) params.append('brand', filters.brand);
+      if (filters.category) params.append('category_id', filters.category);
+      if (filters.brand) params.append('brand_id', filters.brand);
       if (filters.minPrice) params.append('min_price', filters.minPrice);
       if (filters.maxPrice) params.append('max_price', filters.maxPrice);
       if (filters.sort) params.append('sort', filters.sort);

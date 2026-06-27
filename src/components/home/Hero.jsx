@@ -3,25 +3,7 @@ import { Users, ChevronLeft, ChevronRight, Compass, Wallet, Smartphone, Headphon
 import { useTranslation } from 'react-i18next';
 import { contentService } from '../../services/contentService';
 
-const getFallbackSlides = (t) => [
-  {
-    id: 1,
-    title: <>{t("Together,")}<br /><span style={{ color: '#f59e0b' }}>{t("We Save More")}</span></>,
-    subtitle: t('Team up with friends and unlock bigger savings on every group purchase.'),
-    bgColor: 'linear-gradient(135deg, #F2F3F5 0%, #E6E8EB 100%)', // Soft Silver Gray
-    titleColor: '#1a1d20',
-    subtitleColor: '#495057',
-    productName: 'iPhone 14 Pro Max',
-    productPrice: '46,800 AED',
-    productCashback: t('Earn 4,680 AED Cashback'),
-    totalCashback: t('Total Cashback +12,000 AED'),
-    productIcon: <Smartphone size={18} />,
-    productImage: 'https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=800&q=80',
-    btnPrimaryBg: '#1a1d20',
-    btnPrimaryText: '#ffffff',
-    btnOutlineColor: '#1a1d20'
-  }
-];
+const getFallbackSlides = (t) => [];
 
 const Hero = ({ onOpenGroup, onExploreDeals }) => {
   const { t } = useTranslation();
@@ -84,6 +66,10 @@ const Hero = ({ onOpenGroup, onExploreDeals }) => {
 
   if (loading) {
      return <div style={{ height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{t("Loading Banners...")}</div>;
+  }
+
+  if (!slides || slides.length === 0) {
+     return null;
   }
 
   return (
